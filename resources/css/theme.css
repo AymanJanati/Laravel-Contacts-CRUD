@@ -1,0 +1,56 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --nav-bg: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --nav-bg: #2d2d2d;
+    --border-color: #404040;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    background-color: var(--nav-bg) !important;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--text-color) !important;
+    opacity: 0.8;
+}
+
+.card, .table {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color);
+    color: var(--text-color) !important;
+}
+
+.table th, .table td {
+    background-color: var(--bg-color) !important;
+    border-color: var(--border-color);
+    color: var(--text-color) !important;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+}
